@@ -1,3 +1,7 @@
-README.md : notes.md
-    @echo "  GEN   $@"
-    @pandoc -f markdown -t gfm -o $@ $<
+This a README.md file
+```
+[]: # The first snippet is rendered as:
+[]: # This is a README.md file
+[]: # ```
+[]: # The second snippet is rendered as:
+```
