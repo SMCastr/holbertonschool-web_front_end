@@ -41,34 +41,29 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: var(--font-weight-bold);
 }
 
-a {
+a:link {
     color: var(--text-color);
     text-decoration: none;
 }
 
-/* Apply styles to anchor elements with hyperlinks */
-a[href] {
-    color: var(--text-color);
-    text-decoration: none;
-}
-
-/* Apply styles to visited anchor elements */
-a[href]:visited {
+a:visited {
     font-style: italic;
 }
 
-/* Apply styles to hover state of anchor elements */
-a[href]:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Apply styles to active state of anchor elements */
-a[href]:active {
+a:active {
     background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
     display: none;
+}
+
+.card-category {
+    color: var(--color-primary);
 }
 
 .section-header {
@@ -84,8 +79,8 @@ a[href]:active {
 }
 
 .section-tagline {
+    color: var(--color-primary);
     font-family: var(--font-family-title);
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
-    color: var(--color-primary);
 }
